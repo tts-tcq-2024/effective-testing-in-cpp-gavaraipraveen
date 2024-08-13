@@ -19,7 +19,7 @@ int printColorMap(std::ostream& outStream) {
 int main() {
     std::ostringstream colorMapOutput;
     int result = printColorMap(colorMapOutput);
-    //assert(result == 25);
+    assert(result == 25);
     
     std::string expectedOutput =
         "0 | White | Blue\n"
