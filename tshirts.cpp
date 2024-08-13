@@ -17,6 +17,11 @@ int main() {
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
+
+    // New tests to catch the bug
+    assert(size(38) == 'S');  // This should fail because 38 is not handled correctly
+    assert(size(42) == 'M');  // This should fail because 42 is not handled correctly
+    
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
