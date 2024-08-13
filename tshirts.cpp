@@ -21,6 +21,9 @@ int main() {
     // New tests to catch the bug
     assert(size(38) == 'S');  // This should fail because 38 is not handled correctly
     assert(size(42) == 'M');  // This should fail because 42 is not handled correctly
+    assert(size(0) == 'S'); 
+    assert(size(-1) == 'S');
+    assert(size(1000) == 'L'); 
     
     std::cout << "All is well (maybe!)\n";
     return 0;
