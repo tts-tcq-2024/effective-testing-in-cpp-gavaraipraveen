@@ -9,8 +9,8 @@ int printColorMap(std::ostream& outStream) {
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
-            outStream << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[j] << "\n";
-            //std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            outStream << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
         }
     }
     return i * j;
