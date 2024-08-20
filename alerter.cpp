@@ -25,6 +25,7 @@ void alertInCelcius(float farenheit) {
 
 int main() {
     alertInCelcius(400.5);
+    assert(alertFailureCount == 1);  // This assertion should fail
     alertInCelcius(303.6);
     std::cout << alertFailureCount << " alerts failed.\n";
     std::cout << "All is well (maybe!)\n";
